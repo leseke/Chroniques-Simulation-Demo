@@ -1,18 +1,41 @@
 # Chroniques Simulation Demo
 
-A compact, public C#/.NET demonstration of deterministic simulation architecture.
+**Deterministic Simulation Engine · C# / .NET 8 · xUnit**
 
-> This repository is an independent portfolio demo. It does **not** contain source code, documentation, assets, or proprietary implementation details from the private Chroniques repositories.
+A compact public demonstration of a deterministic simulation architecture built to showcase clean state modeling, ordered systems, reproducible scenarios and automated validation.
 
-## What this demonstrates
+> **Portfolio demo:** this repository is intentionally independent. It does **not** contain source code, documentation, assets, or proprietary implementation details from the private Chroniques repositories.
 
-- deterministic world simulation with a seeded state;
-- entity/component-style state modeling;
-- ordered systems executed by a scheduler;
-- progressive information propagation across agents;
-- event resolution and memory evolution;
-- reproducible replay tests with xUnit;
-- clean separation between simulation logic and tests.
+## At a glance
+
+| Capability | Demonstrated here |
+| --- | --- |
+| Deterministic simulation | Seeded state and reproducible execution |
+| Simulation architecture | World state + ordered systems + scheduler |
+| Information propagation | Knowledge spreads progressively across agents |
+| Event lifecycle | Creation, propagation, resolution and memory evolution |
+| Replayability | Same seeded scenario → same logical trace |
+| Automated validation | xUnit tests covering core deterministic behavior |
+
+## Architecture
+
+```text
+WORLD
+  ↓
+SCHEDULER
+  ↓
+ORDERED SYSTEMS
+  ├─ event state
+  ├─ propagation
+  ├─ resolution
+  └─ memory evolution
+  ↓
+DETERMINISTIC RESULT
+  ↓
+REPLAY / TEST
+```
+
+The important point is not the size of the demo: each transition is explicit and testable. Simulation behavior is separated from validation code so scenarios can be reproduced instead of debugged through hidden state.
 
 ## Demo scenario
 
@@ -42,22 +65,39 @@ Chroniques.Simulation.Demo/
       └─ DeterministicSimulationTests.cs
 ```
 
-## Run
+## Run it
+
+Requirements: **.NET 8 SDK**.
 
 ```bash
+git clone https://github.com/leseke/Chroniques-Simulation-Demo.git
+cd Chroniques-Simulation-Demo
+dotnet restore
+dotnet build
+dotnet test
 dotnet run --project src/Chroniques.Simulation.Demo
 ```
 
-## Test
+## Engineering focus
 
-```bash
-dotnet test
-```
+This project demonstrates the kind of engineering decisions that matter when a system grows beyond a simple script:
 
-## Why this matters
-
-The goal is not to build a game here. The goal is to show a production-oriented development pattern: deterministic behavior, explicit state transitions, testable systems, reproducible scenarios, and clear hand-off documentation.
+- explicit state transitions;
+- deterministic behavior;
+- modular simulation systems;
+- reproducible scenarios;
+- automated regression tests;
+- clear separation of responsibilities;
+- maintainable hand-off documentation.
 
 ## Portfolio context
 
-This demo complements my automation and data portfolio by showing a different capability: designing and validating a structured C#/.NET simulation engine rather than only scripts, spreadsheets, or data utilities.
+I work on automation, data-processing utilities and C#/.NET software. This demo complements projects such as **CleanFlow** by showing a different capability: designing and validating a structured simulation engine rather than only scripts, spreadsheets or data utilities.
+
+### Relevant skills
+
+`C#` · `.NET 8` · `xUnit` · `Simulation Architecture` · `Deterministic Systems` · `Automated Testing` · `Software Design`
+
+---
+
+**Need a deterministic workflow, business tool, data utility or C#/.NET component?** This repository is designed as a compact example of how I structure, test and document software before delivery.
