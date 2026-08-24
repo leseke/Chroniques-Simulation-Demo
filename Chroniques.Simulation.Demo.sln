@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chroniques.Simulation.Demo", "src\Chroniques.Simulation.Demo\Chroniques.Simulation.Demo.csproj", "{7F0A8F33-06E0-4D5C-8D1F-7D61F9322F10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chroniques.Simulation.Demo.Tests", "tests\Chroniques.Simulation.Demo.Tests\Chroniques.Simulation.Demo.Tests.csproj", "{5EC54B2D-5FCF-4685-96CA-4F54B2CE4E32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F0A8F33-06E0-4D5C-8D1F-7D61F9322F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0A8F33-06E0-4D5C-8D1F-7D61F9322F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0A8F33-06E0-4D5C-8D1F-7D61F9322F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0A8F33-06E0-4D5C-8D1F-7D61F9322F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EC54B2D-5FCF-4685-96CA-4F54B2CE4E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EC54B2D-5FCF-4685-96CA-4F54B2CE4E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EC54B2D-5FCF-4685-96CA-4F54B2CE4E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EC54B2D-5FCF-4685-96CA-4F54B2CE4E32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
