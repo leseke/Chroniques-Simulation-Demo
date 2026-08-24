@@ -1,5 +1,7 @@
 # Chroniques Simulation Demo
 
+![Chroniques Simulation Demo](chroniques-simulation-demo.PNG)
+
 **Deterministic Simulation Engine · C# / .NET 8 · xUnit**
 
 A compact public demonstration of a deterministic simulation architecture built to showcase clean state modeling, ordered systems, reproducible scenarios and automated validation.
