@@ -1,6 +1,6 @@
 # Chroniques Simulation Demo
 
-![Chroniques Simulation Demo](chroniques-simulation-demo.PNG)
+![Chroniques Simulation Demo](%20%20%20%20chroniques-simulation-demo.PNG)
 
 **Deterministic Simulation Engine · C# / .NET 8 · xUnit**
 
