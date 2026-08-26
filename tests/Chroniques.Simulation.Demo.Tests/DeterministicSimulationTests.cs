@@ -1,5 +1,6 @@
 using Chroniques.Simulation.Demo.Core;
 using Chroniques.Simulation.Demo.Simulation;
+using Xunit;
 
 namespace Chroniques.Simulation.Demo.Tests;
 
